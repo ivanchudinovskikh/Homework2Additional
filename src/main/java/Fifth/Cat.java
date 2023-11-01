@@ -3,7 +3,7 @@ package Fifth;
 public class Cat {
     private String name; // ошибка в ограничении доступа!
     private int age;     // ошибка в ограниении доступа!
-    public int weight;
+    private int weight;  // ошибка в ограничении и отсутствие геттера и сеттера!
 
     public Cat(String name, int age, int weight) {
         this.name = name;
@@ -25,5 +25,13 @@ public class Cat {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 }
